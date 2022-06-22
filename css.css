@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat",sans-serif;
+}
+
+.header {
+    height: 90px;
+    background-color: red;
+    padding: 0 20px;
+    color: #FFF;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo {
+    line-height: 90px;
+    float: left;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.menu {
+    float: right;
+    line-height: 90px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.menu a:hover,
+.logo:hover{
+    color: darkred;
+}
+
+@media screen and (max-width:800px) {
+
+   
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        padding: 80px 0;        
+        text-align: center;
+        transition: 0.7s;
+        right: -100%;
+        
+    }
+
+    .menu a {
+        display: block;
+    }
+}
+p{
+    position: relative;
+    top: 100px;
+    width: 70%;
+    text-align: center;
+    left: 15%;
+    line-height: 20px;
+    font-family: sans-serif;
+    font-size: ;
+}
+
+
+
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+{
+  position: absolute;  
+  opacity: 0;
+  margin-top: 95vh;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: solid 2px white;
+  border-radius: 999px;
+  background-color: transparent;
+  margin: 95vh 6px 0 6px;
+  z-index: 2;
+  cursor: pointer;
+  transition-duration: .4s;
+}
+
+input:checked + label{
+  background-color: white;
+}
+
+input:focus + label{
+  box-shadow: 0 0 0 2px teal, 0 0 18px white;
+}
+
+.slide {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition-duration: .4s;
+  opacity: 1;
+}
+
+input:checked ~ .slide {
+  transform: translateX(100%);
+}
+
+input:checked + label + .slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.bg1{
+  background-image: url(1.jpg);
+}
+.bg2{
+  background-image: url(2.png);
+}
+.bg3{
+  background-image: url(3.png);
+}
+.bg4{
+  background-image: url(4.png);
+}
+.bg5{
+  background-image: url(6.jpg);
+}
+
+
+
+form { 
+margin: 0 auto; 
+width:50%;
+}
+
+.ktu {
+  background: white;
+  padding: 5% 20% 5% 20%;
+}
+
+.kutu {
+  background: red;
+  width: 100%;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 5px;
+  border: 0px;
+  transition: 0.2s;
+  caret-color: red;
+  color: red;
+}
+
+.kutu:focus {
+  outline: none;
+  background: purple;
+  border-color: ;
+  box-shadow: 0 0 20px #974D97;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.msj {
+  min-height: 150px;
+  padding-bottom: 20%;
+}
+
+
+button {
+  position: relative;
+  transform: translateY(10%);
+  display: block;
+  text-transform: none;
+  text-decoration: none;
+  
+  border: 2px solid rgba(235, 235, 235, 1);
+  border-radius: 12px;
+  padding: 1em 2em;
+  overflow: hidden;
+  color: red;
+  font-weight: 600;
+  font-family: sans-serif;
+  z-index: 0;
+  backface-visibility: hidden;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+button:hover {
+  transition: all 0.3s ease-out;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.btn-in::before {
+  transform: scale(5);
+  border-radius: 100px;
+  transition: all 0.25s ease-out;
+
+}
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0,0.5);
+  background: red;
+  border-radius: 100%;
+  overflow: hidden;
+  z-index: -1;
+  
+}
+button:hover::before {
+  transform: scale(2,4);
+  transition: all 0.25s ease-out; 
+}
+
+@media screen and (max-width: 1200px) {
+ 
+form { 
+margin: 0 auto; 
+width: 60%;
+}
+.ktu {
+  background: white;
+  padding: 5% 5% 5% 5%;
+}
+}
+@media screen and (max-width: 650px) {
+
+  form { 
+margin: 0 auto; 
+width: 100%;
+}
+.ktu {
+  background: whitesmoke;
+  padding: 5%;
+}
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+a {
+
+  text-decoration: none;
+}
+
+
+
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
